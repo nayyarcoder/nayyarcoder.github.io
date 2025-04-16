@@ -1,12 +1,31 @@
 title: Personal Portfolio
 description: A showcase of my projects, skills, and professional experience
-theme: jekyll-theme-minimal
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
 
-# Social links (optional)
+# Site settings
+locale: "en-US"
+name: "Generative AI Engineer"
+url: "https://nayyarcoder.github.io"
+repository: "nayyarcoder/nayyarcoder.github.io"
+
+# Social links
 github_username: nayyarcoder
+linkedin_username: ai-engineer
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Theme settings
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

@@ -1,0 +1,19 @@
+core_competencies:
+  - name: Agentic Frameworks
+    percentage: 95
+  - name: MCP Server Architecture
+    percentage: 90
+  - name: Generative AI
+    percentage: 92
+  - name: Natural Language Processing
+    percentage: 88
+
+technical_skills:
+  - name: Python
+    percentage: 98
+  - name: Machine Learning
+    percentage: 85
+  - name: Distributed Systems
+    percentage: 87
+  - name: Cloud Architecture
+    percentage: 83
