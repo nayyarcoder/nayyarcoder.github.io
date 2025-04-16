@@ -1,0 +1,26 @@
+.gradient-bg {
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+}
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: #e0e0e0;
+}
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #6e48aa, #9d50bb);
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 36px;
+    top: 24px;
+    height: 100%;
+    width: 2px;
+    background: #e0e0e0;
+}

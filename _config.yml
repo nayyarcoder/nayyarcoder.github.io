@@ -1,0 +1,12 @@
+title: Personal Portfolio
+description: A showcase of my projects, skills, and professional experience
+theme: jekyll-theme-minimal
+
+# Social links (optional)
+github_username: nayyarcoder
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
