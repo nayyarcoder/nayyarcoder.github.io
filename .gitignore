@@ -9,7 +9,6 @@ vendor/
 # Ruby environment
 .ruby-version
 .ruby-gemset
-Gemfile.lock
 
 # Node.js
 node_modules/
