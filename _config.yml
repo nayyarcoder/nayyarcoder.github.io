@@ -21,6 +21,21 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+
+# GitHub Pages settings
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-include-cache
   - jekyll-remote-theme
 
