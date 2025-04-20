@@ -1,7 +1,10 @@
 title: Personal Portfolio
 description: A showcase of my projects, skills, and professional experience
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "dark"
+
+# Build configuration
+sass:
+  style: compressed
+  sourcemap: never
 
 # Site settings
 locale: "en-US"

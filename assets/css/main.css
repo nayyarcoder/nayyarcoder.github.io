@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-r from-purple-600 to-purple-800;
+  }
+  
+  .skill-bar {
+    @apply h-2 rounded-full bg-gray-200;
+  }
+  
+  .skill-progress {
+    @apply h-full rounded-full bg-purple-600;
+  }
+}

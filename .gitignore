@@ -11,6 +11,22 @@ vendor/
 .ruby-gemset
 Gemfile.lock
 
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build output
+assets/css/style.css
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -19,9 +35,3 @@ Gemfile.lock
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Editor directories and files
-.idea/
-.vscode/
-*.swp
-*.swo

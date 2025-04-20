@@ -16,9 +16,9 @@ technologies:
     icon_color: text-indigo-600
   - name: AWS
     icon: fab fa-aws
-    icon_color: text-yellow-600  - name: Vector DBs
+    icon_color: text-yellow-600
+  - name: Vector DBs
     icon: fas fa-database
-    icon_color: text-blue-400
     icon_color: text-blue-400
   - name: Distributed Systems
     icon: fas fa-network-wired
