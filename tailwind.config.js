@@ -6,7 +6,12 @@ module.exports = {
     './*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
