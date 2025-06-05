@@ -1,18 +1,116 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Custom styles */
-@layer components {
-  .gradient-bg {
-    @apply bg-gradient-to-r from-purple-600 to-purple-800;
-  }
-  
-  .skill-bar {
-    @apply h-2 rounded-full bg-gray-200;
-  }
-  
-  .skill-progress {
-    @apply h-full rounded-full bg-purple-600;
-  }
+/* Basic Reset or Base Styles (if you don't have a separate reset.css) */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Basic font stack */
+    box-sizing: border-box;
 }
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Light grey background for the page */
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header .tagline {
+    font-size: 1.1em;
+    color: #ddd; /* Lighter color for tagline */
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    background: #fff; /* White background for content sections */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Project Cards Styling */
+.project-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards if they don't fill the whole line */
+}
+
+.project-card {
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Space below each card if they stack vertically */
+    background-color: #f9f9f9; /* Light background for the card */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    flex-basis: calc(33.333% - 20px); /* Aim for 3 cards per row, adjusting for gap */
+    min-width: 280px; /* Minimum width before cards start to shrink too much */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #333; /* Darker heading color */
+}
+
+.project-card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #555; /* Slightly lighter text color for paragraph */
+}
+
+.project-card h3 em {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #777;
+}
+
+/* Responsive adjustments for project cards */
+@media (max-width: 992px) {
+    .project-card {
+        flex-basis: calc(50% - 20px); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-basis: 100%; /* 1 card per row on small screens */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Add any other custom styles your site needs below */
