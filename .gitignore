@@ -1,0 +1,16 @@
+# Jekyll build output
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Deploy keys
+gh-pages-deploy*
