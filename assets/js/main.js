@@ -170,17 +170,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const techTags = document.querySelectorAll('.tech-tag');
     techTags.forEach((tag, index) => {
         tag.style.animationDelay = `${index * 0.05}s`;
-        
-        tag.addEventListener('mouseenter', function() {
+          tag.addEventListener('mouseenter', function() {
             this.style.transform = 'scale(1.05)';
-            this.style.background = 'var(--primary-color)';
+            this.style.background = '#4c1d95';
             this.style.color = 'white';
+            this.style.borderColor = '#4c1d95';
         });
         
         tag.addEventListener('mouseleave', function() {
             this.style.transform = 'scale(1)';
-            this.style.background = 'var(--background-light)';
-            this.style.color = 'var(--primary-color)';
+            this.style.background = '#faf5ff';
+            this.style.color = '#4c1d95';
+            this.style.borderColor = 'rgba(76, 29, 149, 0.2)';
         });
     });
 
@@ -269,8 +270,9 @@ const rippleStyles = `
 }
 
 nav a.active {
-    background: rgba(255, 255, 255, 0.3) !important;
-    border-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%) !important;
+    border-color: #f59e0b;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
 }
 `;
 
